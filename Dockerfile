@@ -9,7 +9,7 @@ USER 0
 RUN yum install -y gedit \
     && yum install -g -y node \
     && yum install -g @vue/cli \
-    && yum clean all \
-
+    && yum clean all
+    
 ## switch back to default user
 USER 1000
