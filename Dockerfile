@@ -5,7 +5,7 @@ FROM consol/centos-xfce-vnc
 USER 0
 
 ## Install a gedit
-RUN yum install -g node
+RUN yum install node
 
 ## switch back to default user
 USER 1000
