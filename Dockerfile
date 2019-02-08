@@ -1,15 +1,11 @@
 ## Custom Dockerfile
 FROM consol/centos-xfce-vnc
-ENV REFRESHED_AT 2018-03-18
 
 # Switch to root user to install additional software
 USER 0
 
 ## Install a gedit
-RUN yum install -y gedit \
-    && yum install -g -y node \
-    && yum install -g @vue/cli \
-    && yum clean all
-    
+RUN yum install -g node
+
 ## switch back to default user
 USER 1000
